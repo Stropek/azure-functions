@@ -2,16 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
+using Sample.Functions.Models;
 
 namespace Sample.Functions.Http
 {
-    public class Superhero
-    {
-        public string Name { get; set; }
-
-        public string Team { get; set; }
-    }
-
     public static class HttpObject
     {
         [FunctionName("HttpObject")]

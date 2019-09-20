@@ -5,6 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.CosmosDB" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.4" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
@@ -29,7 +32,11 @@
     <Folder Include="Http\" />
     <Folder Include="Blob\" />
     <Folder Include="CosmosDB\" />
-    <Folder Include="EventBus\" />
+    <Folder Include="ServiceBus\" />
     <Folder Include="Durable\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Superhero.css" />
   </ItemGroup>
 </Project>
