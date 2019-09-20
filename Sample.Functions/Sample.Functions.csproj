@@ -30,13 +30,13 @@
   <ItemGroup>
     <Folder Include="Timer\" />
     <Folder Include="Http\" />
-    <Folder Include="Blob\" />
-    <Folder Include="CosmosDB\" />
-    <Folder Include="ServiceBus\" />
     <Folder Include="Durable\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Superhero.css" />
+    <Compile Remove="CosmosDB\GetFromCosmos.cs" />
+    <Compile Remove="Blob\GetSuperhero.cs" />
+    <Compile Remove="ServiceBus\Queue.cs" />
   </ItemGroup>
 </Project>
