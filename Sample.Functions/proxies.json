@@ -7,13 +7,6 @@
                 "methods": [ "POST", "OPTIONS" ]
             },
             "backendUri": "https://%WEBSITE_HOSTNAME%/api/HttpAdmin"
-        },
-        "Object": {
-            "matchCondition": {
-                "route": "object",
-                "methods": [ "POST", "OPTIONS" ]
-            },
-            "backendUri": "https://%WEBSITE_HOSTNAME%/api/HttpObject"
         }
     }
 }
