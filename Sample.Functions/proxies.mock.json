@@ -1,0 +1,18 @@
+﻿{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "ProxySample": {
+            "matchCondition": {
+                "route": "/proxysample",
+                "methods": [ "GET", "POST", "OPTIONS" ]
+            },
+            "responseOverrides": {
+                "response.body": {
+                    "id": 1,
+                    "name": "Iron Man"
+                },
+                "response.statusCode": "200"
+            }
+        }
+    }
+}

@@ -14,9 +14,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
+    <None Update="proxies.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="proxies %28copy%29.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="proxies %28copy%29.mock.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Timer\" />
     <Folder Include="Http\" />
+    <Folder Include="Blob\" />
+    <Folder Include="CosmosDB\" />
+    <Folder Include="EventBus\" />
+    <Folder Include="Durable\" />
   </ItemGroup>
 </Project>

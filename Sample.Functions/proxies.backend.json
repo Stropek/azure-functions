@@ -1,0 +1,12 @@
+﻿{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "ProxySample": {
+            "matchCondition": {
+                "route": "/proxysample",
+                "methods": [ "POST", "OPTIONS" ]
+            },
+            "backendUri": "https://%WEBSITE_HOSTNAME%/api/HttpSample"
+        }
+    }
+}
