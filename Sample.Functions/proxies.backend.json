@@ -6,7 +6,7 @@
                 "route": "/proxysample",
                 "methods": [ "POST", "OPTIONS" ]
             },
-            "backendUri": "https://%WEBSITE_HOSTNAME%/api/HttpSample"
+            "backendUri": "https://%WEBSITE_HOSTNAME%/api/HttpAdmin"
         }
     }
 }

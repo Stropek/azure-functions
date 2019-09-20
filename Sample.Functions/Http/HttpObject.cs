@@ -12,11 +12,11 @@ namespace Sample.Functions.Http
         public string Team { get; set; }
     }
 
-    public static class HttpParameter
+    public static class HttpObject
     {
-        [FunctionName("HttpParameter")]
+        [FunctionName("HttpObject")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "/parameter/{id}")] Superhero superhero,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post")] Superhero superhero,
             ILogger log)
         {
             var message = $"Superhero name: {superhero.Name} [team: {superhero.Team}]";

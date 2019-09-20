@@ -13,7 +13,7 @@ namespace Sample.Functions.Http
     {
         [FunctionName("HttpRouteParameter")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "/parameter/{id}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "parameter/{id}")] HttpRequest req,
             string id,
             ILogger log)
         {

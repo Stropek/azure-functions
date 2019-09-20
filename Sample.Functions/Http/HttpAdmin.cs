@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Sample.Functions
+namespace Sample.Functions.Http
 {
     public static class HttpAdmin
     {
